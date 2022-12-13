@@ -1,8 +1,5 @@
-import math
-
-def longestSubstringKDistinct(string, k):
-    maxLength = -math.inf
-    windowStart = 0
+def longest_substring_k_distinct_characters(string, k):
+    windowStart, maxLength = 0, 0
     charCount = dict()
 
     for windowEnd in range(len(string)):
@@ -24,4 +21,4 @@ def longestSubstringKDistinct(string, k):
 string = "cbbebi"
 k = 3
 
-print(longestSubstringKDistinct(string, k))
+print(longest_substring_k_distinct_characters(string, k))
