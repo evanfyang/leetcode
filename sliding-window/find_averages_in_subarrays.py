@@ -1,4 +1,4 @@
-def find_averages_of_subarrays(array, k):
+def find_averages_of_subarrays(k, array):
 	averages = list()
 	windowSum, windowStart = 0, 0
 	
