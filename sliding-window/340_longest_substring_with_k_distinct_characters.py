@@ -19,9 +19,9 @@ def longest_substring_k_distinct_characters(k, string):
     return maxLength
 
 def main():
-    string = "cbbebi"
-    k = 3
-    print(longest_substring_k_distinct_characters(string, k))
+    k, string = 3, "cbbebi"
+    print("Input: " + "k = " + k + ", string = " + string)
+    print("Output: " + longest_substring_k_distinct_characters(k, string))
 
 main()
 
