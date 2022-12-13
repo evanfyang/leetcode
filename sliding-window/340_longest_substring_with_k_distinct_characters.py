@@ -18,7 +18,14 @@ def longest_substring_k_distinct_characters(k, string):
 
     return maxLength
 
-string = "cbbebi"
-k = 3
+def main():
+    string = "cbbebi"
+    k = 3
+    print(longest_substring_k_distinct_characters(string, k))
 
-print(longest_substring_k_distinct_characters(string, k))
+main()
+
+
+
+
+
