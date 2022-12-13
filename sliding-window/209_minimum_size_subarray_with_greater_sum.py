@@ -1,7 +1,7 @@
 def minimum_size_subarray_with_greater_sum(target, nums):
     windowStart, windowSum, minLength = 0, 0, 0
     
-    for windowEnd in range(length(nums)):
+    for windowEnd in range(len(nums)):
         windowSum += nums[windowEnd]
         while windowSum > target:
             minLength = min(minLength, windowEnd + 1 - windowStart)
