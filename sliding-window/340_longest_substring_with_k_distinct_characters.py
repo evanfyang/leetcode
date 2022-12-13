@@ -1,4 +1,4 @@
-def longest_substring_k_distinct_characters(string, k):
+def longest_substring_k_distinct_characters(k, string):
     windowStart, maxLength = 0, 0
     charCount = dict()
 
