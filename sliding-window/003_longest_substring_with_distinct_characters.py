@@ -1,21 +1,21 @@
 def longest_substring_with_distinct_characters(string):
-	windowStart = 0, maxLength = 0
-	characters = dict()
+    windowStart = 0, maxLength = 0
+    characters = dict()
 
-	for windowEnd in range(len(string)):
-		if string[windowEnd] not in characters:
-			characters[string[windowEnd]] = 1
-		else:
+    for windowEnd in range(len(string)):
+        if string[windowEnd] not in characters:
+            characters[string[windowEnd]] = 1
+        else:
             characters[string[windowEnd]] += 1
-			while characters[string[windowEnd]] > 1:
-				characters[string[windowStart]] -= 1
-				if characters[string[windowStart]] == 0:
-					del characters[string[windowStart]]
-				windowStart += 1
+            while characters[string[windowEnd]] > 1:
+                characters[string[windowStart]] -= 1
+                if characters[string[windowStart]] == 0:
+                    del characters[string[windowStart]]
+                windowStart += 1
 
-		maxLength = max(maxLength, windowEnd + 1 - windowStart)
+        maxLength = max(maxLength, windowEnd + 1 - windowStart)
 
-	return maxLength
+    return maxLength
 
 # example to explain tricky part
 # perdawkzvestkou
