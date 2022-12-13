@@ -12,7 +12,8 @@ def find_averages_of_subarrays(k, array):
 	return averages
 
 def main():
-    averages = find_averages_of_subarrays(5, [1, 3, 2, 6, -1, 4, 1, 8, 2])
-    print("Averages of subarrays of size K: " + str(averages))
+    k = 5, array = [1, 3, 2, 6, -1, 4, 1, 8, 2]
+    print("Input: " + "k = " + k + ", array = " + array)
+    print("Output: " + find_averages_of_subarrays(k, array))
 
 main()
