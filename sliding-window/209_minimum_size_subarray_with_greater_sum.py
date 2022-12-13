@@ -12,6 +12,7 @@ def minimum_size_subarray_with_greater_sum(target, nums):
 
 def main():
     target = 7, nums = [2,3,1,2,4,3]
-    print(minimum_size_subarray_with_greater_sum(target, nums))
+    print("Input: " + "target = " + target + ", nums = " + nums)    
+    print("Output: " + minimum_size_subarray_with_greater_sum(target, nums))
 
 main()
