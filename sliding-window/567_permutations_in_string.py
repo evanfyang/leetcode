@@ -17,7 +17,7 @@ def permutations_in_string(string, pattern):
         if matched_chars == len(char_frequency):
             return True
 
-        if (windowEnd + 1 >= len(s1)):
+        if (windowEnd + 1 >= len(pattern)):
             if string[windowStart] in char_frequency:
                 if char_frequency[string[windowStart]] == 0:
                     matched_chars -= 1
