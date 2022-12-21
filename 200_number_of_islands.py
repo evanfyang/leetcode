@@ -34,8 +34,8 @@ def main():
         ["1","1","0","0","0"],
         ["0","0","0","0","0"]
     ]
-    print("Input: " + "matrix = " + matrix)    
-    print("Output: " + number_of_islands(matrix))
+    print("Input: " + "matrix = " + str(matrix))    
+    print("Output: " + str(number_of_islands(matrix)))
     
     matrix = [
         ["1","1","0","0","0"],
@@ -43,7 +43,7 @@ def main():
         ["0","0","1","0","0"],
         ["0","0","0","1","1"]
     ]
-    print("Input: " + "matrix = " + matrix)    
-    print("Output: " + number_of_islands(matrix))
+    print("Input: " + "matrix = " + str(matrix))    
+    print("Output: " + str(number_of_islands(matrix)))
     
 main()
