@@ -46,5 +46,9 @@ def main():
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + find_all_anagrams(string, pattern))
     
+    string = "baa", pattern = "aa"
+    print("Input: " + "string = " + string + ", pattern = " + pattern)    
+    print("Output: " + find_all_anagrams(string, pattern))
+    
 
 main()
