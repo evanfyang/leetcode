@@ -16,7 +16,7 @@ def find_all_anagrams(string, pattern):
             if char_frequency[right_char] == 0:
                 matched += 1
 
-        if matched == len(pattern):
+        if matched == len(char_frequency):
             anagrams.append(windowStart)
 
         if windowEnd + 1 >= len(pattern):
