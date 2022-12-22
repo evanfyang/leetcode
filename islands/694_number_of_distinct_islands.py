@@ -10,7 +10,7 @@ def number_of_distinct_islands(matrix):
                 traversal_sequence = traverse_islands_dfs(matrix, x, y, visited, "O")
                 traversal_sequences.add(traversal_sequence)
     print(traversal_sequences)
-    return len(travel_sequences)
+    return len(traversal_sequences)
 
 def traverse_islands_dfs(matrix, x, y, visited, direction):
     if x < 0 or x >= len(matrix) or y < 0 or y >= len(matrix[0]):
