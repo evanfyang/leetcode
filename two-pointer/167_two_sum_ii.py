@@ -14,11 +14,11 @@ def two_sum_ii(numbers, target):
 
 def main():
     numbers = [1, 2, 3, 4, 6], target = 6
-    print("Input: " + str(numbers) + ", target: " + str(target))
+    print("Input: numbers = " + str(numbers) + ", target = " + str(target))
     print("Output: " + two_sum_ii(numbers, target))
     
     numbers = [2, 5, 9, 11], target = 11
-    print("Input: " + str(numbers) + ", target: " + str(target))
+    print("Input: numbers = " + str(numbers) + ", target = " + str(target))
     print("Output: " + two_sum_ii(numbers, target))
     
 main()
