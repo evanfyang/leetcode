@@ -15,7 +15,7 @@ def number_of_distinct_islands(matrix):
 def traverse_islands_dfs(matrix, x, y, visited, direction):
     if x < 0 or x >= len(matrix) or y < 0 or y >= len(matrix[0]):
         return ""
-    if matrix[x][y] == 0 or (x, y) in visited:
+    if matrix[x][y] == 0 or visited[x][y]:
         return ""
 
     visited[x][y] = True
