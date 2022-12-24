@@ -1,3 +1,5 @@
+import math
+
 def three_sum_closest(nums, target):
     nums.sort()
     smallest_difference = math.inf
@@ -22,15 +24,18 @@ def three_sum_closest(nums, target):
     return target - smallest_difference
 
 def main():
-    nums = [-1,2,1,-4], target = 1
+    nums = [-1,2,1,-4]
+    target = 1
     print("Input: nums = " + str(nums) + ", target = " + str(target))
     print("Output: " + three_sum_closest(nums, target))
     
-    nums = [0,0,0], target = 1
+    nums = [0,0,0]
+    target = 1
     print("Input: nums = " + str(nums) + ", target = " + str(target))
     print("Output: " + three_sum_closest(nums, target))
     
-    nums = [-2,0,1,2], target = 2
+    nums = [-2,0,1,2]
+    target = 2
     print("Input: nums = " + str(nums) + ", target = " + str(target))
     print("Output: " + three_sum_closest(nums, target))
     

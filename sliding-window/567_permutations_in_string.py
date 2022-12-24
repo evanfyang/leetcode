@@ -27,11 +27,13 @@ def permutations_in_string(string, pattern):
     return False
 
 def main():
-    string = "eidbaooo", pattern = "ab"
+    string = "eidbaooo"
+    pattern = "ab"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + permutations_in_string(string, pattern))
     
-    string = "eidboaoo", pattern = "ab"
+    string = "eidboaoo"
+    pattern = "ab"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + permutations_in_string(string, pattern))
 

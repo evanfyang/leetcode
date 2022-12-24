@@ -14,7 +14,7 @@ def max_area_of_islands(matrix):
 
     return max_island_area
 
-def visit_island_dfs(matrix, x, y):
+def visit_islands_dfs(matrix, x, y):
     if x < 0 or x >= len(matrix) or y < 0 or y >= len(matrix[0]):
         return 0
     if matrix[x][y] == 0:

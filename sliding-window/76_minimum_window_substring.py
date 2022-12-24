@@ -30,36 +30,42 @@ def minimum_window_substring(string, pattern):
 
     if min_length > len(string):
         return ""
-    return s[substring_start:substring_start + min_length]
+    return string[substring_start:substring_start + min_length]
 
 def main():
-    def main():
-    string = "ADOBECODEBANC", pattern = "ABC"
+    string = "ADOBECODEBANC"
+    pattern = "ABC"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
-    string = "a", pattern = "a"
+    string = "a"
+    pattern = "a"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
-    string = "a", pattern = "aa"
+    string = "a"
+    pattern = "aa"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
-    string = "aabdec", pattern = "abc"
+    string = "aabdec"
+    pattern = "abc"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
-    string = "aabdec", pattern = "abac"
+    string = "aabdec"
+    pattern = "abac"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
-    string = "abdbca", pattern = "abc"
+    string = "abdbca"
+    pattern = "abc"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
-    string = "adcad", pattern = "abc"
+    string = "adcad"
+    pattern = "abc"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
-    print("Output: " + find_all_anagrams(string, pattern))
+    print("Output: " + minimum_window_substring(string, pattern))
     
 main()

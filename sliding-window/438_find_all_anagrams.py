@@ -30,23 +30,28 @@ def find_all_anagrams(string, pattern):
     return anagrams
 
 def main():
-    string = "cbaebabacd", pattern = "abc"
+    string = "cbaebabacd"
+    pattern = "abc"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + find_all_anagrams(string, pattern))
     
-    string = "abab", pattern = "ab"
+    string = "abab"
+    pattern = "ab"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + find_all_anagrams(string, pattern))
     
-    string = "ppqp", pattern = "pq"
+    string = "ppqp"
+    pattern = "pq"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + find_all_anagrams(string, pattern))
     
-    string = "abbcabc", pattern = "abc"
+    string = "abbcabc"
+    pattern = "abc"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + find_all_anagrams(string, pattern))
     
-    string = "baa", pattern = "aa"
+    string = "baa"
+    pattern = "aa"
     print("Input: " + "string = " + string + ", pattern = " + pattern)    
     print("Output: " + find_all_anagrams(string, pattern))
     
