@@ -3,7 +3,7 @@ def three_sum_smaller(nums, target):
     count = 0
 
     for i in range(len(nums)):
-        count = count_sums_smaller(nums, target - nums[i], i)
+        count += count_sums_smaller(nums, target - nums[i], i)
     
     return count
 
