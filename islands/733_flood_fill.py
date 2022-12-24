@@ -1,6 +1,6 @@
 def flood_fill(image, x, y, new_color):
     if image[x][y] != new_color:
-        self.visit_pixels_dfs(image, x, y, image[x][y], new_color)
+        fill_pixels_dfs(image, x, y, image[x][y], new_color)
     return image
 
 def fill_pixels_dfs(self, image, x, y, old_color, new_color):
@@ -11,10 +11,10 @@ def fill_pixels_dfs(self, image, x, y, old_color, new_color):
 
     image[x][y] = new_color
 
-    self.visit_pixels_dfs(image, x - 1, y, old_color, new_color)
-    self.visit_pixels_dfs(image, x + 1, y, old_color, new_color)
-    self.visit_pixels_dfs(image, x, y - 1, old_color, new_color)
-    self.visit_pixels_dfs(image, x, y + 1, old_color, new_color)
+    fill_pixels_dfs(image, x - 1, y, old_color, new_color)
+    fill_pixels_dfs(image, x + 1, y, old_color, new_color)
+    fill_pixels_dfs(image, x, y - 1, old_color, new_color)
+    fill_pixels_dfs(image, x, y + 1, old_color, new_color)
 
 def main():
     image = [

@@ -6,7 +6,7 @@ def island_perimeter(matrix):
     for x in range(num_rows):
         for y in range(num_columns):
             if matrix[x][y] == 1:
-                return self.calculate_perimeter_dfs(matrix, x, y, visited)
+                return calculate_perimeter_dfs(matrix, x, y, visited)
 
 def calculate_perimeter_dfs(self, matrix, x, y, visited):
     if x < 0 or x >= len(matrix) or y < 0 or y >= len(matrix[0]):

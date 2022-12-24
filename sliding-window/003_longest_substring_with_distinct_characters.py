@@ -1,5 +1,5 @@
 def longest_substring_with_distinct_characters(string):
-    windowStart = 0, maxLength = 0
+    windowStart, maxLength = 0, 0
     characters = dict()
 
     for windowEnd in range(len(string)):
@@ -25,8 +25,8 @@ def longest_substring_with_distinct_characters_grokking_solution(string):
     char_index_map = {}
 
     # try to extend the range [windowStart, windowEnd]
-    for window_end in range(len(str1)):
-        right_char = str1[window_end]
+    for window_end in range(len(string)):
+        right_char = string[window_end]
         # if the map already contains the 'right_char', shrink the window from the beginning
         # so that we have only one occurrence of 'right_char'
         if right_char in char_index_map:

@@ -19,11 +19,13 @@ def longest_repeating_character_replacement(k, string):
     return maxLength
 
 def main():
-    k = 2, string = "ABAB"
+    k = 2
+    string = "ABAB"
     print("Input: " + "k = " + k + ", string = " + string)    
     print("Output: " + longest_repeating_character_replacement(k, string))
     
-    k = 1, string = "AABABBA"
+    k = 1
+    string = "AABABBA"
     print("Input: " + "k = " + k + ", string = " + string)    
     print("Output: " + longest_repeating_character_replacement(k, string))
 

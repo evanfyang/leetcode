@@ -11,11 +11,13 @@ def max_sum_subarray_of_size_k(k, array):
     return maxSum
 
 def main():
-    k = 3, array = [2, 1, 5, 1, 3, 2]
+    k = 3 
+    array = [2, 1, 5, 1, 3, 2]
     print("Input: " + "k = " + k + ", string = " + array)
     print("Output: " + max_sum_subarray_of_size_k(k, array))
-    
-    k = 2, array = [2, 3, 4, 1, 5]
+
+    k = 2 
+    array = [2, 3, 4, 1, 5]
     print("Input: " + "k = " + k + ", string = " + array)
     print("Output: " + max_sum_subarray_of_size_k(k, array))
 
