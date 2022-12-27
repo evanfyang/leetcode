@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-class ListNode:
+class node:
     def __init__(self, x):
          self.val = x
          self.next = None
@@ -36,12 +36,12 @@ def linked_list_cycle_length(head):
     return cycle_length
     
 def main()
-    head = Node(1)
-    head.next = Node(2)
-    head.next.next = Node(3)
-    head.next.next.next = Node(4)
-    head.next.next.next.next = Node(5)
-    head.next.next.next.next.next = Node(6)
+    head = node(1)
+    head.next = node(2)
+    head.next.next = node(3)
+    head.next.next.next = node(4)
+    head.next.next.next.next = node(5)
+    head.next.next.next.next.next = node(6)
     print("LinkedList has cycle: " + str(linked_list_cycle(head)))
 
     head.next.next.next.next.next.next = head.next.next
@@ -50,12 +50,12 @@ def main()
     head.next.next.next.next.next.next = head.next.next.next
     print("LinkedList has cycle: " + str(linked_list_cycle(head)))
 
-    head = ListNode(1)
-    head.next = ListNode(2)
-    head.next.next = ListNode(3)
-    head.next.next.next = ListNode(4)
-    head.next.next.next.next = ListNode(5)
-    head.next.next.next.next.next = ListNode(6)
+    head = node(1)
+    head.next = node(2)
+    head.next.next = node(3)
+    head.next.next.next = node(4)
+    head.next.next.next.next = node(5)
+    head.next.next.next.next.next = node(6)
     head.next.next.next.next.next.next = head.next.next
     print("LinkedList cycle length: " + str(linked_list_cycle_length(head)))
 
