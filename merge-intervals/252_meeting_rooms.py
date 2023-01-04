@@ -1,4 +1,4 @@
-def conflicting_appointments(intervals):
+def meeting_rooms(intervals):
     start, end = 0, 0    
 
     intervals.sort(key=lambda interval: interval[start])
@@ -12,14 +12,14 @@ def conflicting_appointments(intervals):
 def main():
     intervals = [[1,4],[2,5],[7,9]]
     print("Input: " + str(intervals))
-    print("Output: " + str(conflicting_appointments(intervals)))
+    print("Output: " + str(meeting_rooms(intervals)))
     
     intervals = [[6,7],[2,4],[8,12]]
     print("Input: " + str(intervals))
-    print("Output: " + str(conflicting_appointments(intervals)))
+    print("Output: " + str(meeting_rooms(intervals)))
 
     intervals = [[4,5],[2,3],[3,6]]
     print("Input: " + str(intervals))
-    print("Output: " + str(conflicting_appointments(intervals)))
+    print("Output: " + str(meeting_rooms(intervals)))
 
 main()
