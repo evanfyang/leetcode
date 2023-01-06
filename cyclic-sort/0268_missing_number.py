@@ -1,4 +1,30 @@
+def missing_number_leetcode(nums):
+    n = len(nums)
+    n_sum = (n * (n + 1)) // 2
+    nums_sum = 0
+
+    for num in nums:
+        nums_sum += num
+
+    return n_sum - nums_sum
+
 def missing_number_grokking(nums):
+    i, n = 0, len(nums)
+    while i < n:
+        j = nums[i]
+        if nums[i] < n and nums[i] != nums[j]:
+            nums[i], nums[j] = nums[j], nums[i]  # swap
+        else:
+            i += 1
+
+    # find the first number missing from its index, that will be our required number
+    for i in range(n):
+        if nums[i] != i:
+            return i
+
+    return n
+
+def missing_number(nums):
     for index in range(len(nums)):
         while nums[index] < len(nums) and nums[index] != index:
             temp = nums[nums[index]]
@@ -10,16 +36,6 @@ def missing_number_grokking(nums):
             return index
 
     return len(nums)
-
-def missing_number(nums):
-    n = len(nums)
-    n_sum = (n * (n + 1)) // 2
-    nums_sum = 0
-
-    for num in nums:
-        nums_sum += num
-
-    return n_sum - nums_sum
 
 def main():
     nums = [4,0,3,1]
