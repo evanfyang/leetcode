@@ -1,3 +1,20 @@
+def find_missing_numbers_grokking(nums):
+    i = 0
+    while i < len(nums):
+        j = nums[i] - 1
+        if nums[i] != nums[j]:
+            nums[i], nums[j] = nums[j], nums[i]  # swap
+        else:
+            i += 1
+
+    missing_numbers = list()
+
+    for i in range(len(nums)):
+        if nums[i] != i + 1:
+            missing_numbers.append(i + 1)
+
+    return missing_numbers
+
 def find_all_missing_numbers(nums):
     for index in range(len(nums)):
         while nums[index] != nums[nums[index] - 1]:
@@ -5,13 +22,13 @@ def find_all_missing_numbers(nums):
             nums[nums[index] - 1] = nums[index]
             nums[index] = temp
 
-    missing_nums = list()
+    missing_numbers = list()
 
     for index in range(len(nums)):
         if nums[index] != index + 1:
-            missing_nums.append(index + 1)
+            missing_numbers.append(index + 1)
 
-    return missing_nums
+    return missing_numbers
 
 def main():
     nums = [2,3,1,8,2,3,5,1]
