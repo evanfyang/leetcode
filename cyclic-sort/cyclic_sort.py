@@ -1,3 +1,13 @@
+def cyclic_sort_grokking(nums):
+    i = 0
+    while i < len(nums):
+        j = nums[i] - 1
+        if nums[i] != nums[j]:
+            nums[i], nums[j] = nums[j], nums[i]  # swap
+        else:
+            i += 1
+    return nums
+
 def cyclic_sort(nums):
     for index in range(len(nums)):
         while nums[index] - 1 != index:
