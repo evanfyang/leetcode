@@ -9,8 +9,7 @@ class Node:
         while node is not None:
             print(node.value, end="->")
             node = node.next
-        print("None")
-        print()
+        print("None", end="")
     
 def rotate_list(head, k):
     if head is None or head.next is None or k <= 0:
@@ -44,10 +43,10 @@ def main():
     head.next.next.next.next = Node(5)
     head.next.next.next.next.next = Node(6)
 
-    print("Nodes of original LinkedList are: ", end='')
+    print("Nodes of original linked list are: ", end='')
     head.print_list()
     result = rotate_list(head, 3)
-    print("Nodes of rotated LinkedList are: ", end='')
+    print("Nodes of rotated linked list are: ", end='')
     result.print_list()
 
 main()

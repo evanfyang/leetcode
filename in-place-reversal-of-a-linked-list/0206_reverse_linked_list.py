@@ -4,6 +4,13 @@ class Node:
         self.value = value
         self.next = next
 
+    def print_list(self):
+        node = self
+        while node is not None:
+            print(node.value, end="->")
+            node = node.next
+        print("None", end="")
+
 def reverse_linked_list(head):
     previous_pointer = None
     next_pointer = None
@@ -23,10 +30,10 @@ def main():
     head.next.next.next = Node(8)
     head.next.next.next.next = Node(10)
 
-    print("Nodes of original LinkedList are: ", end='')
+    print("Nodes of original linked list are: ", end='')
     head.print_list()
     result = reverse_linked_list(head)
-    print("Nodes of reversed LinkedList are: ", end='')
+    print("Nodes of reversed linked list are: ", end='')
     result.print_list()
     
 main()

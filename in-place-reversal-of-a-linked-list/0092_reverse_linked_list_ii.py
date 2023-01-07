@@ -1,10 +1,17 @@
 # Definition for singly-linked list.
 class Node:
-    def __init__(self, val=0, next=None):
+    def __init__(self, value=0, next=None):
         self.val = value
         self.next = next
+    
+    def print_list(self):
+        node = self
+        while node is not None:
+            print(node.value, end="->")
+            node = node.next
+        print("None", end="")
 
-def reverse_linked_list_ii(head):
+def reverse_linked_list_ii(head, left, right):
     if left == right:
         return head
 
