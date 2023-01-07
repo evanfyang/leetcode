@@ -18,14 +18,18 @@ def binary_tree_level_order_traversal_ii(root):
 
     while len(queue) > 0:
         current_level = list()
-        current_level_size = len(queue)
-        for _ in range(current_level_size):
+        current_level_length = len(queue)
+        
+        for _ in range(current_level_length):
             current_node = queue.popleft()
             current_level.append(current_node.value)
+            
             if current_node.left is not None:
                 queue.append(current_node.left)
+            
             if current_node.right is not None:
                 queue.append(current_node.right)
+        
         traversal.appendleft(current_level)
     
     return list(traversal)
