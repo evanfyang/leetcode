@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-class Node:
+class ListNode:
     def __init__(self, value=0, next=None):
         self.value = value
         self.next = next
@@ -36,12 +36,12 @@ def rotate_list(head, k):
     return head
 
 def main():
-    head = Node(1)
-    head.next = Node(2)
-    head.next.next = Node(3)
-    head.next.next.next = Node(4)
-    head.next.next.next.next = Node(5)
-    head.next.next.next.next.next = Node(6)
+    head = ListNode(1)
+    head.next = ListNode(2)
+    head.next.next = ListNode(3)
+    head.next.next.next = ListNode(4)
+    head.next.next.next.next = ListNode(5)
+    head.next.next.next.next.next = ListNode(6)
 
     print("Nodes of original linked list are: ", end='')
     head.print_list()

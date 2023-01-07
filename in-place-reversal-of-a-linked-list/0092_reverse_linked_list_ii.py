@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-class Node:
+class ListNode:
     def __init__(self, value=0, next=None):
         self.val = value
         self.next = next
@@ -46,16 +46,16 @@ def reverse_linked_list_ii(head, left, right):
     return head
 
 def main():
-    head = Node(1)
-    head.next = Node(2)
-    head.next.next = Node(3)
-    head.next.next.next = Node(4)
-    head.next.next.next.next = Node(5)
+    head = ListNode(1)
+    head.next = ListNode(2)
+    head.next.next = ListNode(3)
+    head.next.next.next = ListNode(4)
+    head.next.next.next.next = ListNode(5)
 
-    print("Nodes of original LinkedList are: ", end='')
+    print("Nodes of original linked list are: ", end='')
     head.print_list()
     result = reverse_linked_list_ii(head, 2, 4)
-    print("Nodes of reversed LinkedList are: ", end='')
+    print("Nodes of reversed linked list are: ", end='')
     result.print_list()
 
 main()
