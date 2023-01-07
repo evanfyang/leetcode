@@ -1,3 +1,16 @@
+# Definition for singly-linked list.
+class Node:
+    def __init__(self, value=0, next=None):
+        self.value = value
+        self.next = next
+
+    def print_list(self):
+        node = self
+        while node is not None:
+            print(node.value, end="->")
+            node = node.next
+        print("None", end="")
+
 def reverse_alternating_k_element_sublist(head, k):
     if k <= 1 or head is None:
         return head
@@ -44,10 +57,10 @@ def main():
     head.next.next.next.next.next.next = Node(7)
     head.next.next.next.next.next.next.next = Node(8)
 
-    print("Nodes of original LinkedList are: ", end='')
+    print("Nodes of original linked list are: ", end='')
     head.print_list()
     result = reverse_alternating_k_element_sublist(head, 2)
-    print("Nodes of reversed LinkedList are: ", end='')
+    print("Nodes of reversed linked list are: ", end='')
     result.print_list()
 
 main()
