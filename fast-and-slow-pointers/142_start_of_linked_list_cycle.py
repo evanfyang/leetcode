@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-class node:
+class Node:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -43,12 +43,12 @@ def start_of_linked_list_cycle(head):
     return slow_pointer
 
 def main():
-  head = node(1)
-  head.next = node(2)
-  head.next.next = node(3)
-  head.next.next.next = node(4)
-  head.next.next.next.next = node(5)
-  head.next.next.next.next.next = node(6)
+  head = Node(1)
+  head.next = Node(2)
+  head.next.next = Node(3)
+  head.next.next.next = Node(4)
+  head.next.next.next.next = Node(5)
+  head.next.next.next.next.next = Node(6)
 
   head.next.next.next.next.next.next = head.next.next
   print("LinkedList cycle start: " + str(start_of_linked_list_cycle(head).value))

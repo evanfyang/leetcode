@@ -1,16 +1,16 @@
 def happy_number(number):
     slow_pointer = number
-    fast_pointer = self.find_squared_sum(number)
+    fast_pointer = find_squared_sum(number)
 
     while slow_pointer != fast_pointer:
-        slow_pointer = self.find_squared_sum(slow_pointer)
-        fast_pointer = self.find_squared_sum(self.find_squared_sum(fast_pointer))
+        slow_pointer = find_squared_sum(slow_pointer)
+        fast_pointer = find_squared_sum(find_squared_sum(fast_pointer))
         if slow_pointer == fast_pointer:
             break
 
     return slow_pointer == 1
 
-def find_squared_sum(self, number):
+def find_squared_sum(number):
     squared_sum = 0
     while number > 0:
         digit = number % 10

@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-class node:
+class Node:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
@@ -15,18 +15,18 @@ def middle_of_the_linked_list(head):
     return slow_pointer
 
 def main():
-    head = node(1)
-    head.next = node(2)
-    head.next.next = node(3)
-    head.next.next.next = node(4)
-    head.next.next.next.next = node(5)
+    head = Node(1)
+    head.next = Node(2)
+    head.next.next = Node(3)
+    head.next.next.next = Node(4)
+    head.next.next.next.next = Node(5)
 
     print("Middle Node: " + str(middle_of_linked_list(head).value))
 
-    head.next.next.next.next.next = node(6)
+    head.next.next.next.next.next = Node(6)
     print("Middle Node: " + str(middle_of_linked_list(head).value))
 
-    head.next.next.next.next.next.next = node(7)
+    head.next.next.next.next.next.next = Node(7)
     print("Middle Node: " + str(middle_of_linked_list(head).value))
     
 main()
