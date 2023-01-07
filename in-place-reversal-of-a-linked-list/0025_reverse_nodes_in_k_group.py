@@ -3,8 +3,16 @@ class Node:
     def __init__(self, value=0, next=None):
         self.value = value
         self.next = next
+    
+    def print_list(self):
+        node = self
+        while node is not None:
+            print(node.value, end="->")
+            node = node.next
+        print("None")
+        print()
 
-def reverse_nodes_in_k_group(head):
+def reverse_nodes_in_k_group(head, k):
     if k <= 1 or head is None:
         return head
 
