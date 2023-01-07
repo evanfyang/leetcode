@@ -9,8 +9,7 @@ class Node:
         while node is not None:
             print(node.value, end="->")
             node = node.next
-        print("None")
-        print()
+        print("None", end="")
 
 def reverse_nodes_in_k_group(head, k):
     if k <= 1 or head is None:
@@ -65,10 +64,10 @@ def main():
     head.next.next.next.next.next.next = Node(7)
     head.next.next.next.next.next.next.next = Node(8)
 
-    print("Nodes of original LinkedList are: ", end='')
+    print("Nodes of original linked list are: ", end='')
     head.print_list()
     result = reverse_nodes_in_k_group(head, 3)
-    print("Nodes of reversed LinkedList are: ", end='')
+    print("Nodes of reversed linked list are: ", end='')
     result.print_list()
  
 main()
