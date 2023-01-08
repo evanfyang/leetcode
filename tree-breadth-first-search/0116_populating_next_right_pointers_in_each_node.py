@@ -21,7 +21,7 @@ class TreeNode:
                     if current_node.right:
                         next_level_root = current_node.right
                 current_node = current_node.next
-          print()
+            print()
 
 def populating_next_right_pointers_in_each_node(root):
     if root is None:
