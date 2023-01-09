@@ -1,7 +1,7 @@
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
-         self.val = x
+         self.value = x
          self.next = None
     
 def linked_list_cycle(head):

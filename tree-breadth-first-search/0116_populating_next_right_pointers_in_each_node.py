@@ -3,7 +3,7 @@ from collections import deque
 # Definition for a Node.
 class TreeNode:
     def __init__(self, value = 0, left = None, right = None, next = None):
-        self.val = value
+        self.value = value
         self.left = left
         self.right = right
         self.next = next
