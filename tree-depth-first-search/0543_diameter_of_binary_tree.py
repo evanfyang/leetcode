@@ -1,14 +1,16 @@
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, value=0, left=None, right=None):
-        self.val = value
+        self.value = value
         self.left = left
         self.right = right
 
 def diameter_of_binary_tree_grokking(root):
-    max_diameter = [0]
+    max_diameter = 0
     
     def find_max_diameter_dfs(current_node):
+        nonlocal max_diameter
+
         if current_node is None:
             return 0
         
@@ -17,28 +19,30 @@ def diameter_of_binary_tree_grokking(root):
 
         if left_subtree_height != 0 and right_subtree_height != 0:
             diameter = left_subtree_height + right_subtree_height + 1
-            max_diameter[0] = max(max_diameter[0], diameter)
+            max_diameter = max(max_diameter, diameter)
         
         return max(left_subtree_height, right_subtree_height) + 1
     
     find_max_diameter_dfs(root)
-    return max_diameter[0]
+    return max_diameter
 
 def diameter_of_binary_tree(root):
-    max_diameter = [0]
+    max_diameter = 0
     
     def find_max_diameter_dfs(current_node):
+        nonlocal max_diameter
+
         if current_node is None:
             return -1
         
         left_subtree_height = find_max_diameter_dfs(current_node.left)
         right_subtree_height = find_max_diameter_dfs(current_node.right)
         
-        max_diameter[0] = max(max_diameter[0], left_subtree_height + right_subtree_height + 2)
+        max_diameter = max(max_diameter, left_subtree_height + right_subtree_height + 2)
         return max(left_subtree_height, right_subtree_height) + 1
     
     find_max_diameter_dfs(root)
-    return max_diameter[0]
+    return max_diameter
 
 def main():
     root = TreeNode(1)
