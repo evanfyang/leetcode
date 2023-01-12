@@ -29,7 +29,6 @@ def count_paths_prefix_sum_dfs(current_node, target_sum, prefix_sum_frequency, c
 
     return path_count
 
-
 def main():
     root = TreeNode(12)
     root.left = TreeNode(7)
