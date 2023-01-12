@@ -5,6 +5,25 @@ class TreeNode:
         self.left = left
         self.right = right
 
+def diameter_of_binary_tree_grokking(root):
+    max_diameter = [0]
+    
+    def find_max_diameter_dfs(current_node):
+        if current_node is None:
+            return 0
+        
+        left_subtree_height = find_max_diameter_dfs(current_node.left)
+        right_subtree_height = find_max_diameter_dfs(current_node.right)
+
+        if left_subtree_height != 0 and right_subtree_height != 0:
+            diameter = left_subtree_height + right_subtree_height + 1
+            max_diameter[0] = max(max_diameter[0], diameter)
+        
+        return max(left_subtree_height, right_subtree_height) + 1
+    
+    find_max_diameter_dfs(root)
+    return max_diameter[0]
+
 def diameter_of_binary_tree(root):
     max_diameter = [0]
     
