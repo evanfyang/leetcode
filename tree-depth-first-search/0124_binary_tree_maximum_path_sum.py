@@ -7,7 +7,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def binary_tree_maximum_path_sum_grokking(root):
+def binary_tree_maximum_path_sum(root):
     global_max_path_sum = -math.inf
     
     def find_max_path_sum_dfs(current_node):
