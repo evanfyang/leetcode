@@ -6,9 +6,11 @@ def find_smallest_letter_greater_than_target(letters, target):
 
         if target < letters[middle]:
             end = middle - 1
+        # key >= letters[mid]:
         else:
             start = middle + 1
-    
+    # since the loop is running until 'start <= end', 
+    # so at the end of the while loop, 'start == end + 1'
     return letters[start % len(letters)]
 
 def main():
