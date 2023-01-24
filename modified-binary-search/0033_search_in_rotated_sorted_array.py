@@ -7,11 +7,19 @@ def search_in_rotated_sorted_array(nums, target):
         if target == nums[middle]:
             return middle
         
-        if nums[start] <= nums[middle]:
+        # the only difference from the previous solution,
+        # if numbers at indexes start, mid, and end are same, we can't choose a side
+        # the best we can do, is to skip one number from both ends as key != arr[mid]
+        if nums[start] == nums[middle] and nums[end] == nums[middle]:
+            start += 1
+            end -= 1
+        # left side is sorted in ascending order
+        elif nums[start] <= nums[middle]:
             if nums[start] <= target and target < nums[middle]:
                 end = middle - 1
             else:
                 start = middle + 1
+        # right side is sorted in ascending order
         else:
             if nums[middle] < target and target <= nums[end]:
                 start = middle + 1
