@@ -15,7 +15,7 @@ def minimum_cost_to_connect_sticks(sticks):
     return total_cost
 
 def main():
-    sticks = [3,1,5,12,2,11]
+    sticks = [1,3,11,5]
     print("Input: nums = " + str(sticks))
     print("Output: " + str(minimum_cost_to_connect_sticks(sticks)))
     print()
@@ -26,6 +26,16 @@ def main():
     print()
 
     sticks = [1,3,11,5,2]
+    print("Input: nums = " + str(sticks))
+    print("Output: " + str(minimum_cost_to_connect_sticks(sticks)))
+    print()
+
+    sticks = [2,4,3]
+    print("Input: nums = " + str(sticks))
+    print("Output: " + str(minimum_cost_to_connect_sticks(sticks)))
+    print()
+
+    sticks = [1,8,3,5]
     print("Input: nums = " + str(sticks))
     print("Output: " + str(minimum_cost_to_connect_sticks(sticks)))
     print()
