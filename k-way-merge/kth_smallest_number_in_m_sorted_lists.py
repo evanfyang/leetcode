@@ -2,20 +2,24 @@ from heapq import *
 
 def kth_smallest_number_in_m_sorted_lists(lists, k):
     min_heap = list()
+
+    # put the 1st element of each list in the min heap
     for list_number in range(len(lists)):
-        heappush(min_heap, (lists[list_number][0], list_number, 0))
+        heappush(min_heap, (lists[list_number][0], lists[list_number], 0))
     
-    value = 0
-    smallest_number_count = 1
+    # take the smallest(top) element form the min heap; if the running count 
+    # is equal to k, return the number
+    number, smallest_number_count = 0, 0
     while min_heap:
-        value, list_number, index = heappop(min_heap)
+        number, array, index = heappop(min_heap)
+        smallest_number_count += 1
         if smallest_number_count == k:
             break
-        elif smallest_number_count < k and len(lists[list_number]) > index + 1:
-            heappush(min_heap, (lists[list_number][index + 1], list_number, index + 1))
-        smallest_number_count += 1
+        # if the array of the top element has more elements, add the next element to the heap
+        if smallest_number_count < k and len(array) > index + 1:
+            heappush(min_heap, (array[index + 1], array, index + 1))
     
-    return value
+    return number
 
 def main():
     lists = [[2,6,8],[3,6,7],[1,3,4]]
