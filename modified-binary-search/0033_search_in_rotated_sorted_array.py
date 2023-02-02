@@ -7,9 +7,10 @@ def search_in_rotated_sorted_array(nums, target):
         if target == nums[middle]:
             return middle
         
-        # the only difference from the previous solution,
-        # if numbers at indexes start, mid, and end are same, we can't choose a side
-        # the best we can do, is to skip one number from both ends as key != arr[mid]
+        # this if block handles cases where there are duplicates in nums;
+        # the only difference from the solution for all unique numbers is
+        # if numbers at indexes start, middle, and end are same, we can't choose a side;
+        # the best we can do is to skip one number from both ends as target != nums[middle]
         if nums[start] == nums[middle] and nums[end] == nums[middle]:
             start += 1
             end -= 1
