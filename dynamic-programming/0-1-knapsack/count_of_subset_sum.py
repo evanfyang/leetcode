@@ -27,13 +27,13 @@ def main():
     nums = [1,1,2,3]
     target_sum = 4
     print("Input: nums = " + str(nums) + ", target_sum = " + str(target_sum))
-    print("Output: " + str(count_of_subset_sum(nums)))
+    print("Output: " + str(count_of_subset_sum(nums, target_sum)))
     print()
 
     nums = [1,2,7,1,5]
     target_sum = 9
     print("Input: nums = " + str(nums) + ", target_sum = " + str(target_sum))
-    print("Output: " + str(count_of_subset_sum(nums)))
+    print("Output: " + str(count_of_subset_sum(nums, target_sum)))
     print()
 
 main() 
