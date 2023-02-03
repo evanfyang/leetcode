@@ -21,7 +21,10 @@ def topological_sort(vertices, edges):
     for vertex in in_degree:
         if in_degree[vertex] == 0:
             sources.append(vertex)
-    
+
+    # 4. For each source, add it to the sortedOrder and subtract 1 from all 
+    # of its children's in-degrees; if a child's in-degree becomes 0, add 
+    # it to the sources queue
     while sources:
         vertex = sources.popleft()
         sorted_order.append(vertex)
@@ -30,6 +33,7 @@ def topological_sort(vertices, edges):
             if in_degree[child] == 0:
                 sources.append(child)
     
+    # topological sort is not possible if there is a cycle in the graph
     if len(sorted_order) != vertices:
         return list()
     
