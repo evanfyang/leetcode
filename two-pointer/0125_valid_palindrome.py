@@ -18,22 +18,22 @@ def valid_palindrome(string):
 
 def main():
     string = "A man, a plan, a canal: Panama"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(valid_palindrome(string))) 
     print() 
 
     string = "race a car"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(valid_palindrome(string))) 
     print() 
 
     string = " "
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(valid_palindrome(string))) 
     print() 
 
     string = "Was it a car or a cat I saw?"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(valid_palindrome(string))) 
     print() 
 

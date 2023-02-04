@@ -17,32 +17,32 @@ def reverse_vowels_of_a_string(string):
 
 def main():
     string = "hello"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(reverse_vowels_of_a_string(string))) 
     print() 
 
     string = "AEIOU"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(reverse_vowels_of_a_string(string))) 
     print() 
 
     string = "DesignGUrus"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(reverse_vowels_of_a_string(string))) 
     print() 
 
     string = "leetcode"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(reverse_vowels_of_a_string(string))) 
     print() 
 
     string = "aA"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(reverse_vowels_of_a_string(string))) 
     print()
 
     string = ".a"
-    print("Input: sting = " + str(string))
+    print("Input: string = " + str(string))
     print("Output: " + str(reverse_vowels_of_a_string(string))) 
     print()
 
