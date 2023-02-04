@@ -1,4 +1,4 @@
-def longest_substring_k_distinct_characters(k, string):
+def longest_substring_k_distinct_characters(string, k):
     windowStart, maxLength = 0, 0
     charCount = dict()
 
@@ -22,6 +22,6 @@ def main():
     k = 3
     string = "cbbebi"
     print("Input: " + "k = " + k + ", string = " + string)
-    print("Output: " + longest_substring_k_distinct_characters(k, string))
+    print("Output: " + longest_substring_k_distinct_characters(string, k))
 
 main()

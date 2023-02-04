@@ -1,4 +1,4 @@
-def find_averages_of_subarrays(k, array):
+def find_averages_of_subarrays(array, k):
     averages = list()
     windowSum, windowStart = 0, 0
     
@@ -15,6 +15,6 @@ def main():
     k = 5
     array = [1, 3, 2, 6, -1, 4, 1, 8, 2]
     print("Input: " + "k = " + k + ", array = " + array)
-    print("Output: " + find_averages_of_subarrays(k, array))
+    print("Output: " + find_averages_of_subarrays(array, k))
 
 main()

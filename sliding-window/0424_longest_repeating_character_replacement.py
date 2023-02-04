@@ -1,4 +1,4 @@
-def longest_repeating_character_replacement(k, string):
+def longest_repeating_character_replacement(string, k):
     windowStart, maxRepeatingCharacterCount, maxLength = 0, 0, 0
     characterFrequency = dict()
     
@@ -22,11 +22,11 @@ def main():
     k = 2
     string = "ABAB"
     print("Input: " + "k = " + k + ", string = " + string)    
-    print("Output: " + longest_repeating_character_replacement(k, string))
+    print("Output: " + longest_repeating_character_replacement(string, k))
     
     k = 1
     string = "AABABBA"
     print("Input: " + "k = " + k + ", string = " + string)    
-    print("Output: " + longest_repeating_character_replacement(k, string))
+    print("Output: " + longest_repeating_character_replacement(string, k))
 
 main()
