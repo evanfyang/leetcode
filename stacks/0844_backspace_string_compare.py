@@ -37,7 +37,7 @@ def build_string(string):
     for character in string:
         if character != "#":
             result_string.append(character)
-        else:
+        elif len(result_string) != 0:
             result_string.pop()
 
     return "".join(result_string)
