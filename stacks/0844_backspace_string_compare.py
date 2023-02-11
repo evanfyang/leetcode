@@ -40,7 +40,7 @@ def build_string(string):
         else:
             result_string.pop()
 
-    return result_string
+    return "".join(result_string)
 
 def backspace_string_compare(string_1, string_2):
     return build_string(string_1) == build_string(string_2)
