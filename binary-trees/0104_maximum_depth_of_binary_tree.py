@@ -30,13 +30,13 @@ def maximum_depth_of_binary_tree(root):
 
 def main():
     tree = [3,9,20,None,None,15,7]
-    print("Input: " + str(tree))
+    print("Input: tree = " + str(tree))
     root = generate_binary_tree_from_array(tree, len(tree), 0)
     print("Output: " + str(maximum_depth_of_binary_tree(root)))
     print()
 
     tree = [1,None,2]
-    print("Input: " + str(tree))
+    print("Input: tree = " + str(tree))
     root = generate_binary_tree_from_array(tree, len(tree), 0)
     print("Output: " + str(maximum_depth_of_binary_tree(root)))
     print()

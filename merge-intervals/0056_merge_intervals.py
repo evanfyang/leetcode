@@ -16,23 +16,23 @@ def merge_intervals(intervals):
 
 def main():
     intervals = [[1,4],[2,5],[7,9]]
-    print("Input: " + str(intervals))
+    print("Input: intervals = " + str(intervals))
     print("Output: " + str(merge_intervals(intervals)))
 
     intervals = [[6,7],[2,4],[5,9]]
-    print("Input: " + str(intervals))
+    print("Input: intervals = " + str(intervals))
     print("Output: " + str(merge_intervals(intervals)))
 
     intervals = [[1,4],[2,6],[3,5]]
-    print("Input: " + str(intervals))
+    print("Input: intervals = " + str(intervals))
     print("Output: " + str(merge_intervals(intervals)))
 
     intervals = [[1,3],[2,6],[8,10],[15,18]]
-    print("Input: " + str(intervals))
+    print("Input: intervals = " + str(intervals))
     print("Output: " + str(merge_intervals(intervals)))
 
     intervals = [[1,4],[4,5]]
-    print("Input: " + str(intervals))
+    print("Input: intervals = " + str(intervals))
     print("Output: " + str(merge_intervals(intervals)))
 
 main()

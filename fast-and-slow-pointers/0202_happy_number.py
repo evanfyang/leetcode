@@ -20,23 +20,23 @@ def find_squared_sum(number):
 
 def main():
     number = 23
-    print("Input: " + str(number))
+    print("Input: number = " + str(number))
     print("Output: " + str(happy_number(number)))
     
     number = 12
-    print("Input: " + str(number))
+    print("Input: number = " + str(number))
     print("Output: " + str(happy_number(number)))
     
     number = 19
-    print("Input: " + str(number))
+    print("Input: number = " + str(number))
     print("Output: " + str(happy_number(number)))
 
     number = 2
-    print("Input: " + str(number))
+    print("Input: number = " + str(number))
     print("Output: " + str(happy_number(number)))
 
     number = 1
-    print("Input: " + str(number))
+    print("Input: number = " + str(number))
     print("Output: " + str(happy_number(number)))
     
 main()

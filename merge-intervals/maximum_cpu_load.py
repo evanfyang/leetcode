@@ -31,15 +31,15 @@ def maximum_cpu_load(jobs):
 
 def main():
     jobs = [Job(1, 4, 3), Job(2, 5, 4), Job(7, 9, 6)]
-    print("Input: " + str(jobs))
+    print("Input: jobs = " + str(jobs))
     print("Output: " + str(maximum_cpu_load(jobs)))
     
     jobs = [Job(6, 7, 10), Job(2, 4, 11), Job(8, 12, 15)]
-    print("Input: " + str(jobs))
+    print("Input: jobs = " + str(jobs))
     print("Output: " + str(maximum_cpu_load(jobs)))
 
     jobs = [Job(1, 4, 2), Job(2, 4, 1), Job(3, 6, 5)]
-    print("Input: " + str(jobs))
+    print("Input: jobs = " + str(jobs))
     print("Output: " + str(maximum_cpu_load(jobs)))
 
 main()
